@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TimeVex
+
+A modern watch store website for men and women. Watches from Rs 300 to Rs 10,000.
+
+## Live Demo
+
+**Website:** [https://timevex-luxury-watches.vercel.app/](https://timevex-luxury-watches.vercel.app/)
+
+**GitHub:** [https://github.com/imhasim/TIMEVEX-LUXURY-WATCHES](https://github.com/imhasim/TIMEVEX-LUXURY-WATCHES)
+
+## Screenshots
+
+### Home Page
+![Home Page](public/screenshots/home.png)
+
+### Shop Page
+![Shop Page](public/screenshots/shop.png)
+
+### About Page
+![About Page](public/screenshots/about.png)
+
+### Contact Page
+![Contact Page](public/screenshots/contact.png)
+
+## Features
+
+- Separate Men and Women sections
+- Filters: Gender, Category and Max Price
+- Search and sort (price, newest, popular)
+- Product page with image gallery and specs
+- Cart and Wishlist (saved in your browser)
+- Coupon codes and checkout (demo only)
+- About page and Contact page with a message form
+- Fully responsive dark premium design
+- Smooth animations
+
+## Tech Stack
+
+| Part | Technology |
+|---|---|
+| Framework | Next.js (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| Animation | Framer Motion |
+| State | Zustand |
+| Forms | React Hook Form + Zod |
+| Deploy | Vercel |
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# 1. Clone the project
+git clone https://github.com/imhasim/TIMEVEX-LUXURY-WATCHES.git
+cd TIMEVEX-LUXURY-WATCHES
+
+# 2. Install packages
+npm install
+
+# 3. Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To build for production:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+TIMEVEX-LUXURY-WATCHES/
+├─ app/            # Pages (Home, Shop, Product, Cart, Checkout...)
+├─ components/     # Reusable UI parts
+├─ data/           # Product data (products.ts)
+├─ store/          # Cart and wishlist state
+├─ lib/            # Helpers and form rules
+└─ public/         # Images and screenshots
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Important Note
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This is a **frontend-only** project. There is no backend or database.
 
-## Deploy on Vercel
+- Product data is stored in `data/products.ts`.
+- Cart and wishlist are saved in the browser (localStorage).
+- Payments and orders are for demo only. No real payment is taken.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is deployed on [Vercel](https://vercel.com). Every push to the main branch updates the live website.
+
+## License
+
+MIT License
+
+## Author
+
+Made by [imhasim](https://github.com/imhasim)
